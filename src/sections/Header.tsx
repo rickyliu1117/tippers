@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { Modal } from '../components/Modal'
 import TokenSelect from './TokenSelect'
 import { UserButton } from './UserButton'
+import WagmiApp from '../wagmi/WagmiApp'
 
 const Bonus = styled.button`
   all: unset;
@@ -102,6 +103,7 @@ export default function Header() {
             </Bonus>
           )}
           <TokenSelect />
+          <WagmiApp />
           <UserButton />
         </div>
       </StyledHeader>
